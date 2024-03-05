@@ -1,8 +1,8 @@
 from socket import *
 
 def get_user_input(command):
-    num1 = input("Enter first number: ")
-    num2 = input("Enter second number: ")
+    num1 = input("Indtast første tal: ")
+    num2 = input("Indtast andet tal: ")
     return f"{command} {num1} {num2}"
 
 def menu():
