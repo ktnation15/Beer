@@ -21,7 +21,7 @@ namespace Beer.Tests
                 var result = repo.GetBeers();
 
                 // Assert
-                Assert.AreEqual(5, result.Count); // Antager at der oprindeligt er 5 øl
+                Assert.AreEqual(5, result.Count); 
         }
 
         [TestMethod()]
@@ -52,7 +52,7 @@ namespace Beer.Tests
 
                 // Assert
                 Assert.IsNotNull(result);
-                Assert.AreEqual(6, allBeers.Count); // Antager at der oprindeligt var 5 øl
+                Assert.AreEqual(6, allBeers.Count); 
                 Assert.IsTrue(allBeers.Any(b => b.Name == "New Test Beer"));
         }
 
@@ -69,7 +69,7 @@ namespace Beer.Tests
 
                 // Assert
                 Assert.IsNotNull(result);
-                Assert.AreEqual(4, allBeers.Count); // Antager at der oprindeligt var 5 øl
+                Assert.AreEqual(4, allBeers.Count);
                 Assert.IsFalse(allBeers.Any(b => b.Id == beerIdToDelete));
         }
 
